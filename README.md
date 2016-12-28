@@ -1,4 +1,4 @@
-# mg_wrapser
+# MG Wrapser
 
 ## Description
 
