@@ -26,7 +26,7 @@ It is possible to alter the stringency criteria for contigs/reads recruitments b
 
 Recruited contigs either as .fasta or .csv files are placed in the results folder of the project directory with suffixes reflecting the order of metagenomes that had been supplied, e.g. \*_mg_0.fasta, \*_mg_1.fasta and so on. By design, the script treats multiple input metagenomes separatlely. However, if several reference files are supplied, they are combined into a single file and a signe database is created. If it is necessary to run software with separate reference files it is suggested to use the script with the supplied BASH Wrapper (see [BASH Wrapper section](#bash-wrapper) for the details).
 
-Currently only fasta formats are supported for both input references and metagenomes. Default output is the recurited metagenomic sequences in fasta format. It is also possible to obtain the results in tab-delimited csv file (or both csv and fasta), that contains target sequences plus allignment features and basic parameters such as GC value, RPKM, etc.
+Currently only fasta formats are supported for both input references and metagenomes. Default output is the recurited metagenomic sequences in fasta format. It is also possible to obtain the results in tab-delimited csv file (or both csv and fasta), that contains target sequences plus allignment features and basic parameters such as GC values, RPKM, etc.
 
 Results summary file is also created in the end of the run. Results contain summary and basic statistic calculations of the run, such as:
 - Number, %, RPKM of recruited sequences
