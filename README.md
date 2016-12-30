@@ -48,7 +48,7 @@ Upon running the scrip the following directory structure is created:
       ¦  
       +-- blast_db ### folder for the BLAST database
       ¦  
-      +-- results ### folder containing .csv, .fasta and .tab files
+      +-- results ### folder containing results files in .csv, .fasta and .tab formats
       ¦   
       --- results_log.csv ### run summary file
 ```
