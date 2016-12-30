@@ -2,7 +2,7 @@
 
 
 
-MG Wrapser is used to recruit reads or contigs from metagenomic data using reference datasets. Scripts wrap BLAST queries against the reference(s), process the output, quantify and recruit metagenomic data.
+MG Wrapser is used to recruit reads or contigs from metagenomic data using reference datasets. The script wraps BLAST queries against the reference(s), processes the output, quantifis and recruits the target sequences from metagenomic data.
 
 Development version of the tool is available at <https://github.com/nyirock/mg_blast_wrapper>
 
