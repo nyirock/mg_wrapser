@@ -36,9 +36,16 @@ Results summary file is also created in the end of the run. Results contain summ
 
 If no project name is specified, by default a folder called "output" containing the project files is created in the directory containing the script.
 Project folder contains the following:
-- results_log.csv: a tab-delimited file containing the run summary
-- input_files: a folder in which reference files are copied and processed
-- blast_db: a folder for blast database
-- results: a folder containing the output files
 
-
+``` 
+./ ### foleder containing the python script
+--- mg_wrapser_latest.py ### executable file
++-- output ### project directory
+    +-- input_files ### folder containing copied and processed reference files
+    ¦  
+    +-- blast_db ### folder for the BLAST database
+    ¦  
+    +-- results ### folder containing .csv, .fasta and .tab files
+    ¦   
+    --- results_log.csv ### run summary file
+```
