@@ -24,7 +24,7 @@ MG Wrapser is designed to recruit and quantify reads or contigs from metagenomes
 
 It is possible to alter the stringency criteria for contigs/reads recruitments by changing minimum BLAST e-Value, % or bp of allignment length, % identiy, etc.
 
-Recruited contigs either in fasta or csv format are placed in the results folder of the project directory with suffixes reflecting the order of metagenomes that had been supplied, e.g. \*_mg_0.fasta, \*_mg_1.fasta and so on. By design, the script treats multiple input metagenomes separatlely. However, if several reference files are supplied, they are combined into a single file and a signe database is created. If it is necessary to run software with separate reference files it is suggested to use the script with the supplied BASH Wrapper.
+Recruited contigs either in fasta or csv format are placed in the results folder of the project directory with suffixes reflecting the order of metagenomes that had been supplied, e.g. \*_mg_0.fasta, \*_mg_1.fasta and so on. By design, the script treats multiple input metagenomes separatlely. However, if several reference files are supplied, they are combined into a single file and a signe database is created. If it is necessary to run software with separate reference files it is suggested to use the script with the supplied BASH Wrapper(see [BASH Wrapper section](#bash-wrapped) for the details).
 
 Currently only fasta formats are supported for both input references and metagenomes. Default output is the recurited metagenomic sequences in fasta format. It is also possible to obtain the results in tab-delimited csv file (or both csv and fasta), that contains target sequences plus allignment features and basic parameters such as GC value, RPKM, etc.
 
