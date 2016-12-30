@@ -13,7 +13,7 @@ Development version of the tool is available at <https://github.com/nyirock/mg_b
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
   - [Standalone](#standalone)
-  - [BASH Wrapper](##bash-wrapper)
+  - [BASH Wrapper](#bash-wrapper)
   - [Examples](#examples)
 - [License](#license)
 
