@@ -35,7 +35,7 @@ Results summary file is also created in the end of the run. Results contain summ
 ## Directory Structure
 
 If no project name is specified, by default a folder called "output" containing the project files is created in the directory containing the script.
-Project folder contains the following:
+Upon running the scrip the following directory structure is created:
 
 ``` 
 ./ ### foleder containing the python script
@@ -43,6 +43,7 @@ Project folder contains the following:
   --- mg_wrapser_latest.py ### executable file
   ¦
   --- output ### project directory
+      ¦
       +-- input_files ### folder containing copied and processed reference files
       ¦  
       +-- blast_db ### folder for the BLAST database
