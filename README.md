@@ -9,7 +9,7 @@ Development version of the tool is available at <https://github.com/nyirock/mg_b
 ## Table of Contents
 
 - [Background](#background)
-  - [Directory Structure](#directories)
+  - [Directory Structure](#Directory Structure)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
   - [Standalone](#standalone)
