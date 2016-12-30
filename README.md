@@ -39,13 +39,15 @@ Project folder contains the following:
 
 ``` 
 ./ ### foleder containing the python script
---- mg_wrapser_latest.py ### executable file
-+-- output ### project directory
-    +-- input_files ### folder containing copied and processed reference files
-    ¦  
-    +-- blast_db ### folder for the BLAST database
-    ¦  
-    +-- results ### folder containing .csv, .fasta and .tab files
-    ¦   
-    --- results_log.csv ### run summary file
+  ¦
+  --- mg_wrapser_latest.py ### executable file
+  ¦
+  --- output ### project directory
+      +-- input_files ### folder containing copied and processed reference files
+      ¦  
+      +-- blast_db ### folder for the BLAST database
+      ¦  
+      +-- results ### folder containing .csv, .fasta and .tab files
+      ¦   
+      --- results_log.csv ### run summary file
 ```
