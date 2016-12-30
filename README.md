@@ -32,7 +32,7 @@ Results summary file is also created in the end of the run. Results contain summ
 - Average recruited sequence GC, STD, SEM
 - Average recruited sequence identity, allignment length, etc.
 
-### Directory Structure
+## Directory Structure
 
 If no project name is specified, by default a folder called "output" containing the project files is created in the directory containing the script.
 Project folder contains the following:
