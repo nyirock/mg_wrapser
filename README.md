@@ -57,7 +57,15 @@ Upon running the scrip the following directory structure is created:
 
 ## Prerequisites
 
-skjfslkjfs
+MG Wrapser requires 
+* NCBI BLAST 
+* python 2, and its packages such as: 
+  * NumPy
+  * pandas 
+  * BioPython 
+  * SciPy <br />
+  
+to be installed. The script has been tested with both legacy BLAST and BLAST+. UNIX-based workstations, running Linux or Mac OS are recommended. Using the software on Windows machines is possible however untested.
 
 
 ## Usage
