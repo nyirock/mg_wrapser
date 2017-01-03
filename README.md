@@ -28,7 +28,7 @@ Recruited contigs either as .fasta or .csv files are placed in the results folde
 
 Currently only fasta formats are supported for both input references and metagenomes. Default output is the recurited metagenomic sequences in fasta format. It is also possible to obtain the results in tab-delimited csv file (or both csv and fasta), that contains target sequences plus allignment features and basic parameters such as GC values, RPKM, etc.
 
-Results summary file is also created in the end of the run. Results contain summary and basic statistic calculations of the run, such as:
+Results summary file is also created in the end of the run. Results log file contains summary and basic statistic calculations of the run, such as:
 - Number, %, RPKM of recruited sequences
 - Average recruited sequence lengs plus STD and SEM
 - Average recruited sequence GC, STD, SEM
