@@ -41,18 +41,18 @@ Upon running the scrip the following directory structure is created:
 
 ``` 
 ./ ### foleder containing the python script
-  ¦
-  |--- mg_wrapser_latest.py ### executable file
-  ¦
-  +-- output ### project directory
-      ¦
-      +-- input_files ### folder containing copied and processed reference files
-      ¦  
-      +-- blast_db ### folder for the BLAST database
-      ¦  
-      +-- results ### folder containing results files in .csv, .fasta and .tab formats
-      ¦   
-      |-- results_log.csv ### run summary file
+  |
+  ├── mg_wrapser_latest.py ### executable file
+  |
+  +── output ### project directory
+      |
+      +── input_files ### folder containing copied and processed reference files
+      |  
+      +── blast_db ### folder for the BLAST database
+      |  
+      +── results ### folder containing results files in .csv, .fasta and .tab formats
+      |   
+      ├── results_log.csv ### run summary file
 ```
 
 ## Prerequisites
