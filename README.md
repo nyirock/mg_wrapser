@@ -79,10 +79,23 @@ mg_wrapser_latest.py -[OPTION]...[ARGUMENT]
 For a standalone use the script is called directly with the required and optional parameters.
 ```
 Required parameters:
--m, --metagenome    path to the metagenome file(s). Multiple files are submitted as a quoted comma-separated list.
--r, --reference     path to the reference file(s). Multiple files are submitted as a quoted comma-separated list.
+-m, --metagenome       path to the metagenome file(s). Multiple files are submitted as a quoted comma-separated list.
+-r, --reference        path to the reference file(s). Multiple files are submitted as a quoted comma-separated list.
 
 Optional parameters:
+-n, --name             name for a project and a project directory. Default: "output".
+-a, --alignment_length minimum alignment length for the sequence to be retrieved in bp(number) or %(number followed by a "%"sign). Default: 50%.
+-i, --identity         minimum identity of the sequence to be retrieved (number from 0 to 100). Default: 95.
+-e, --e_value          BLAST E-value cutoff (e.g 0, 0.001, 1e-20 etc.). Defaut: 1e-5.
+--shear                Enables shearing reference sequences into fragments of specified lengths in bp.
+-f, format             Specifies an output format (csv and/or fasta supported). Default: fasta.
+--iterations           Enables iterative run of the program. Intialize parameter to "true" or a positive number.
+
+Optional flags:
+-h, --help             Displays a help string        
+--debugging            Enables debugging messages if submitted
+--continue_from_previous Prevents directory re-writing
+--skip_blasting        Skips blasting step. Forces the program to use previous blast results.
 ```
 
 skfjskljfslkjfa
