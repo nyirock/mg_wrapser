@@ -79,7 +79,8 @@ mg_wrapser_latest.py -[OPTION]...[ARGUMENT]
 For a standalone use the script is called directly with the required and optional parameters.
 ```
 Required parameters:
--m, --metagenome    path to the metagenome file(s).Multiple files are submitted as a quoted comma-separated list.
+-m, --metagenome    path to the metagenome file(s). Multiple files are submitted as a quoted comma-separated list.
+-r, --reference     path to the reference file(s). Multiple files are submitted as a quoted comma-separated list.
 ```
 skfjskljfslkjfa
 lkdfjslkfjs
