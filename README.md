@@ -99,7 +99,13 @@ Optional flags:
 ```
  
 ## BASH Wrapper
-The following command enables running MG Wrapser from a supplied BASH script:
+Running the software from within the BASH script enables easy way to test
+* Different reference file(s) separately
+* Various stringency parameters, supplied as fixed falues or with an increment parameter
+* Specify list of reference shear values, etc.
+
+
+To run MG Wrapser from a supplied BASH script use the following command:
 ```bash
 cycle_wrapper_latest.bash -f mg_wrapser_latest.py -p parameters_default.txt
 ```
