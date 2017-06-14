@@ -103,4 +103,4 @@ The following command enables running MG Wrapser from a supplied BASH script:
 ```bash
 cycle_wrapper_latest.bash -f mg_wrapser_latest.py -p parameters_default.txt
 ```
-Where mg_wrapser_latest.py and parameters_default.txt are the MG Wrapser and its parameters file respectively.
+Where mg_wrapser_latest.py and parameters_default.txt are the MG Wrapser and its parameters file respectively. Sample parameter settings and the corresponding instructions could be found in parameters_default.txt file.
