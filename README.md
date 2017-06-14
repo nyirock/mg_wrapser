@@ -112,3 +112,5 @@ cycle_wrapper_latest.bash -f mg_wrapser_latest.py -p parameters_default.txt
 Where mg_wrapser_latest.py and parameters_default.txt are the MG Wrapser and its parameters file respectively. Sample parameter settings and the corresponding instructions could be found in parameters_default.txt file.
 
 ## Licence
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+`[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
