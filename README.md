@@ -97,9 +97,10 @@ Optional flags:
 --continue_from_previous Prevents directory re-writing
 --skip_blasting        Skips blasting step. Forces the program to use previous blast results.
 ```
-
-skfjskljfslkjfa
-lkdfjslkfjs
  
 ## BASH Wrapper
-
+The following command enables running MG Wrapser from a supplied BASH script:
+```bash
+cycle_wrapper_latest.bash -f mg_wrapser_latest.py -p parameters_default.txt
+```
+Where mg_wrapser_latest.py and parameters_default.txt are the MG Wrapser and its parameters file respectively.
