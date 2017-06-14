@@ -81,7 +81,10 @@ For a standalone use the script is called directly with the required and optiona
 Required parameters:
 -m, --metagenome    path to the metagenome file(s). Multiple files are submitted as a quoted comma-separated list.
 -r, --reference     path to the reference file(s). Multiple files are submitted as a quoted comma-separated list.
+
+Optional parameters:
 ```
+
 skfjskljfslkjfa
 lkdfjslkfjs
  
