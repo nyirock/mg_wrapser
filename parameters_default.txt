@@ -88,7 +88,7 @@ e_val=1e-20
 ### uncomment and modify the following line to enable reference sequences 
 ### fragmentation to the size of the shear value in bp:
 
-shear=1000
+#shear=1000
 
 ###         Output parameters
 ### use format parameter to set output format of exported contigs
