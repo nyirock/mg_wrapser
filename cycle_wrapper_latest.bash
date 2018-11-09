@@ -1,5 +1,5 @@
 #!/bin/bash
-
+python=`which python2`
 #function chunk_increment_fn {
 #    increment=$chunk_increment
 #    for (( c=0; c<=iterations; c++ ))
@@ -164,7 +164,7 @@ fi
 
 if [ -z "$iterations" ]
     then
-        eval 'python '$filename' -n '$dir_name' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+        eval $python' '$filename' -n '$dir_name' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
 elif [[ "$iterations" -gt 1  &&  "$shear_increment" -gt 0 ]] 
     then
         for (( c=0; c<=$iterations; c++ ))
@@ -174,7 +174,7 @@ elif [[ "$iterations" -gt 1  &&  "$shear_increment" -gt 0 ]]
            shear_opt=" --shear "$shear
            shear=$(($shear+$shear_increment))
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
         done
         
 elif [[ -n "$shear_lst" && "$iterations" == true ]]
@@ -187,7 +187,7 @@ elif [[ -n "$shear_lst" && "$iterations" == true ]]
            shear_opt=" --shear "$shear
            
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
            c=$(($c+1))
 #           if [ "$c" -gt "$iterations" ]
 #                then
@@ -209,7 +209,7 @@ elif [[ "$iterations" -gt 1  &&  "$(echo $alen_increment | grep -o -E '^[0-9]+')
                    alen_opt=" -a "$alen
                    alen=$(($alen+$alen_increment))
                    #echo $chunk_size
-                   eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+                   eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
                 done
 
 
@@ -224,7 +224,7 @@ elif [[ "$iterations" -gt 1  &&  "$(echo $alen_increment | grep -o -E '^[0-9]+')
                    alen_opt=" -a "$abs_alen"%"
                    abs_alen=$(($abs_alen+$abs_alen_inc))
                    #echo $chunk_size
-                   eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+                   eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
                 done
         fi
 
@@ -238,7 +238,7 @@ elif [[ -n "$alen_lst" && "$iterations" == true ]]
            alen_opt=" -a "$alen
            
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
            c=$(($c+1))
 #           if [ "$c" -gt "$iterations" ]
 #                then
@@ -256,7 +256,7 @@ elif [[ "$iterations" -gt "1" && "$iden_increment" -gt "0" ]]
            iden_opt=" -i "$iden
            iden=$(($iden+$iden_increment))
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
         done
         
 elif [[ -n "$iden_lst" && "$iterations" == true ]]
@@ -269,7 +269,7 @@ elif [[ -n "$iden_lst" && "$iterations" == true ]]
            iden_opt=" -i "$iden
            
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
            c=$(($c+1))
 #           if [ "$c" -gt "$iterations" ]
 #                then
@@ -288,7 +288,7 @@ elif [[   -n "$e_val_lst" && "$iterations" == true  ]]
            e_val_opt=" -e "$e_val
            
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
            c=$(($c+1))
 #           if [ "$c" -gt "$iterations" ]
 #                then
@@ -305,7 +305,7 @@ elif [[ -n "$ref_lst" && "$iterations" == true  ]]
            ref_opt=" -r "$ref
            #echo "elif clause triggered"
            #echo $chunk_size
-           eval 'python '$filename' -n '$location' '$ref_opt' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
+           eval $python' '$filename' -n '$location' '$ref_opt' '$req_opt' '$alen_opt' '$iden_opt' '$e_val_opt' '$shear_opt' '$format_opt
            c=$(($c+1))
 #           if [ "$c" -gt "$iterations" ]
 #                then

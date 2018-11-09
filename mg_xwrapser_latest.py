@@ -385,7 +385,7 @@ def main(argv):
     input_ref_0 = ref_out_0
     title_db = name+"_db"#add iteration functionality
     outfile_db = blast_db_Dir+"/iteration"+str(iterations)+"/"+name+"_db"#change into for loop
-    os.system("makeblastdb -in "+input_ref_0+" -dbtype nucl -title "+title_db+" -out "+outfile_db+" -parse_seqids")
+    os.system("makeblastdb -in "+input_ref_0+" -dbtype prot -title "+title_db+" -out "+outfile_db+" -parse_seqids")
     
 # BLASTing query contigs
     if not skip_blasting:
@@ -395,7 +395,7 @@ def main(argv):
             database = outfile_db # adjust for iterations
             blasted_lst.append(results_Dir+"/recruited_mg_"+str(i)+".tab")
             start = time.time()
-            os_string = 'blastn -db '+database+' -query \"'+mg_lst[i]+'\" -out '+blasted_lst[i]+" -evalue "+str(e_val)+"  -outfmt 6 -num_threads 8"
+            os_string = 'blastx -db '+database+' -query \"'+mg_lst[i]+'\" -out '+blasted_lst[i]+" -evalue "+str(e_val)+"  -outfmt 6 -num_threads 8"
             #print os_string
             os.system(os_string)
             print "\t"+mg_lst[i]+"; Time elapsed: "+str(time.time()-start)+" seconds."

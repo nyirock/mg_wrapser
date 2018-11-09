@@ -30,12 +30,12 @@
 
 ### Example of the path containing spaces:
 #metagenome='IMG\ Data/76969.assembled.fna,IMG\ Data/76969.unassembled_illumina.fna'
-reference='MetcysSC2.fna'
+reference='89681.assembled.faa'
 
-#metagenome='IMG_Data1/76969.assembled.fna,IMG_Data1/76969.unassembled_illumina.fna,IMG_Data2/80116.assembled.fna,IMG_Data2/80116.unassembled_illumina.fna,pp_metagenome3_assembled.fasta'
+metagenome='metsilv_BL2.fna'
 
 #metagenome=pp_metagenome3_assembled.fasta,IMG\ Data/76969.assembled.fna,IMG\ Data/76969.unassembled_illumina.fna
-metagenome=pp_metagenome3_assembled.fasta
+#metagenome='mt5000_contigs.fasta'
 #metagenome=IMG_Data2/80116.unassembled_illumina.fna
 
 
@@ -53,7 +53,7 @@ metagenome=pp_metagenome3_assembled.fasta
 #### will result in deletion of the previous data and overwriting the directory tree.
 #### least PidFile:
 
-dir_name='output'
+dir_name='x_test_400aa_50percent'
 #dir_name='3_gen_3_metagen'
 
 #dir_name=Shear1000
@@ -69,14 +69,14 @@ dir_name='output'
 ### Default: alen=50%:
 
 
-alen=100
+alen=700
 #alen=50%
 
 ### iden parameter specifies a percentage of minimum pairwise sequence identity between a contig and a reference
 ### Default: iden=95
 ### Uncomment the following line to activate adn/or change this parameter:
 
-iden=95
+iden=50
 
 ### E value parameter specifies a minimum E value asscociated with a recruited contig.
 ### Default: e_val=1e-5
@@ -186,4 +186,4 @@ format=fasta,csv
 #iden_lst="80 90 95 99 100"
 #shear_lst="0 100 200 300 400 500 1000 2000"
 
-#ref_lst="metsilv_BL2.fna metfer_AR4T.fna all_AP_WPS-2_bacterium.fna"
+#ref_lst=""
